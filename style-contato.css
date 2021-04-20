@@ -1,3 +1,7 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header {
 	background: #BBBBBB;
 	padding: 20px 0;
@@ -33,71 +37,9 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.produtos {
-	width: 940px;
-	margin: 0 auto;
-	padding: 50px 0;
-}
-
-.produtos li {
-	display: inline-block;
-	text-align: center;
-	width: 30%;
-	vertical-align: top;
-	margin: 0 1.5%;
-	padding: 30px 20px;
-	box-sizing: border-box;
-    border: 2px solid #000000;
-    border-radius: 10px;
-}
-
-.produtos li:hover {
-    border-color: #C78C19;
-}
-
-.produtos li:active {
-    border-color: #088C19;
-}
-
-.produtos li:hover h2 {
-    font-size: 34px;
-}
-
-.produtos h2 {
-	font-size: 30px;
-	font-weight: bold;
-}
-
-.produto-descricao {
-	font-size: 18px;
-}
-
-.produto-preco {
-	font-size: 22px;
-	font-weight: bold;
-	margin-top: 10px;
-}
-
-footer {
-    text-align: center;
-    background: url(bg.jpg);
-    padding: 20px 0;
-}
-
-.copyright {
-    color: #FFFFFF;
-    font-size: 13px;
-    margin-top: 20px;
-
-}
-
-main {
-	width: 940px;
-	margin: 0 auto;
-}
 
 form {
-	margin: 40px 0;
+	margin: 40px;
 
 }
 
@@ -133,11 +75,11 @@ form label, form legend {
 
 .enviar:hover {
 	background: darkorange;
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 
 table {
-	margin: 20px 0 40px;
+	margin: 20px  40px;
 }
 
 thead {
@@ -149,4 +91,52 @@ thead {
 td, th {
 	border: 1px solid #000000;
 	padding: 8px 15px;
+}
+
+footer {
+    text-align: center;
+    background: url(bg.jpg);
+    padding: 20px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+
+}
+
+@media screen and (max-width: 480px) {
+    .caixa {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    form label, form legend {
+        font-size: 1.5em;
+        margin: 0 0 10px;
+    }
+    
+    .input-padrao {
+        font-size: 1.5em;
+        margin-bottom: 30px;
+        padding: 15px 25px;
+        width: 70%;
+    }
+    
+    #contato-horario {
+        width: 50%;
+        font-size: 1em;
+        padding: 10px 10px;
+    }
+    .enviar {
+        width: 65%;
+    }
 }
